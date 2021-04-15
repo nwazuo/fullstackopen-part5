@@ -1,0 +1,35 @@
+### get all blogs
+GET https://3003-fuchsia-galliform-0qdtfr0a.ws-eu03.gitpod.io/api/blogs
+
+### create new user
+POST https://3003-fuchsia-galliform-0qdtfr0a.ws-eu03.gitpod.io/api/users
+Content-Type: application/json
+
+{
+    "username": "chizonwazuo",
+    "name": "chizaram nwazuo",
+    "password": "themanofwar"
+}
+
+### Get users
+GET https://3003-fuchsia-galliform-0qdtfr0a.ws-eu03.gitpod.io/api/users
+
+### create new blog
+POST https://3000-cyan-stingray-saq8cael.ws-eu03.gitpod.io/api/blogs
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNoaXpvbndhenVvIiwiaWQiOiI2MDQxNDM4NjBlYzk3NDA4YzgzMjBkYmEiLCJpYXQiOjE2MTQ4OTQ2ODh9.RdfHC95kWr1Nbntm9Jr5ZzlUQf06TQGcelIQP59122A
+Content-Type: application/json
+
+{
+    "title": "The war of two worlds",
+    "url": "chizo.me"
+}
+
+
+### login 
+POST https://3003-cyan-stingray-saq8cael.ws-eu03.gitpod.io/login
+Content-Type: application/json
+
+{
+    "username": "chizonwazuo",
+    "password": "themanofwar"
+}

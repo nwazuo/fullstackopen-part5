@@ -1,0 +1,30 @@
+{
+    "name": "blog-list",
+    "version": "1.0.0",
+    "description": "a blog list application from fullstackopen",
+    "main": "index.js",
+    "scripts": {
+        "test": "cross-env NODE_ENV=test jest --verbose --runInBand",
+        "start": "cross-env NODE_ENV=production node index.js",
+        "dev": "cross-env NODE_ENV=development nodemon index.js"
+    },
+    "author": "chizaram nwazuo",
+    "license": "ISC",
+    "dependencies": {
+        "bcrypt": "^5.0.1",
+        "cors": "^2.8.5",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "express-async-errors": "^3.1.1",
+        "jsonwebtoken": "^8.5.1",
+        "lodash": "^4.17.20",
+        "mongoose": "^5.11.12",
+        "mongoose-unique-validator": "^2.0.3"
+    },
+    "devDependencies": {
+        "cross-env": "^7.0.3",
+        "jest": "^26.6.3",
+        "nodemon": "^2.0.7",
+        "supertest": "^6.1.1"
+    }
+}
